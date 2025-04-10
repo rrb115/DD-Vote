@@ -1,9 +1,8 @@
-package ddvote.shared; // CHANGED
+package ddvote.shared;
 
 import java.io.Serializable;
-import java.util.List; // Keep standard import
+import java.util.List;
 
-// Class definition remains the same
 public class Message implements Serializable {
     private static final long serialVersionUID = 1L; // Keep or update as needed
     private final MessageType type;

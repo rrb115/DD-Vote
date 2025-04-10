@@ -1,8 +1,5 @@
-package ddvote.server; // CHANGED
+package ddvote.server;
 
-// CHANGED Imports
-import ddvote.shared.*;
-// Standard imports
 import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
@@ -11,7 +8,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ClientHandler implements Runnable {
-    // CHANGED Logger name
     private static final Logger LOGGER = Logger.getLogger(ddvote.server.ClientHandler.class.getName());
     private final Socket clientSocket;
     // CHANGED Type

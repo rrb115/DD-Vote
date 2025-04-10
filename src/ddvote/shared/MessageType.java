@@ -2,7 +2,6 @@ package ddvote.shared; // CHANGED
 
 import java.io.Serializable;
 
-// Enum definition remains the same
 public enum MessageType implements Serializable {
     REGISTER, LOGIN, GET_CANDIDATES, SUBMIT_VOTE, GET_RESULTS, PING, DISCONNECT,
     REGISTRATION_SUCCESS, REGISTRATION_FAILED, LOGIN_SUCCESS, LOGIN_FAILED, ALREADY_LOGGED_IN,

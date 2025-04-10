@@ -1,8 +1,5 @@
-package ddvote.server; // CHANGED
+package ddvote.server;
 
-// CHANGED Imports for shared package
-import ddvote.shared.*;
-// Standard Java imports remain the same
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -16,7 +13,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class VotingServer {
-    // CHANGED Logger name to reflect new package
     private static final Logger LOGGER = Logger.getLogger(ddvote.server.VotingServer.class.getName());
     private static final int DEFAULT_PORT = 12345;
     private static final boolean SIMULATE_VOTE_DELAY = false;
@@ -26,12 +22,10 @@ public class VotingServer {
     private volatile boolean running = true;
     private ServerSocket serverSocket;
     private final ExecutorService clientExecutorService;
-    // CHANGED Type to use new package
     private final ddvote.server.ServerAdminConsole adminConsole;
 
     // State maps (types use ddvote.shared implicitly or explicitly)
     private final ConcurrentMap<String, String> registeredVoters = new ConcurrentHashMap<>();
-    // CHANGED Type to use new package
     private final ConcurrentMap<String, ddvote.server.ClientHandler> activeClients = new ConcurrentHashMap<>();
     private final ConcurrentMap<String, ddvote.shared.Candidate> candidates = new ConcurrentHashMap<>();
     private final ConcurrentMap<String, Integer> voteCounts = new ConcurrentHashMap<>();
@@ -42,7 +36,6 @@ public class VotingServer {
         this.port = port;
         this.clientExecutorService = Executors.newCachedThreadPool();
         initializeCandidates();
-        // CHANGED Instantiation to use new package
         this.adminConsole = new ddvote.server.ServerAdminConsole(this);
         LOGGER.info("DD-Vote Server initialized on port " + port); // CHANGED Name
     }

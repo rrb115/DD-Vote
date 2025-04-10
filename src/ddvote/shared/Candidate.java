@@ -1,9 +1,8 @@
-package ddvote.shared; // CHANGED
+package ddvote.shared;
 
 import java.io.Serializable;
 import java.util.Objects;
 
-// Class definition remains the same
 public class Candidate implements Serializable {
     private static final long serialVersionUID = 2L;
     private final String id;

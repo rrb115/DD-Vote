@@ -1,8 +1,7 @@
-package ddvote.shared; // CHANGED
+package ddvote.shared;
 
 import java.io.Serializable;
 
-// Enum definition remains the same
 public enum ElectionState implements Serializable {
     NOT_STARTED("Not Started"), RUNNING("Running"), FINISHED("Finished");
     private final String displayName;

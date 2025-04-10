@@ -1,8 +1,5 @@
-package ddvote.server; // CHANGED
+package ddvote.server;
 
-// CHANGED Imports
-import ddvote.shared.*;
-// Standard imports
 import java.io.*;
 import java.util.List;
 import java.util.Map;
@@ -13,7 +10,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ServerAdminConsole implements Runnable {
-    // CHANGED Logger name
     private static final Logger LOGGER = Logger.getLogger(ddvote.server.ServerAdminConsole.class.getName());
     // CHANGED Type
     private final ddvote.server.VotingServer server;

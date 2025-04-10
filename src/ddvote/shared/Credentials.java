@@ -1,8 +1,7 @@
-package ddvote.shared; // CHANGED
+package ddvote.shared;
 
 import java.io.Serializable;
 
-// Class definition remains the same (still INSECURE)
 public class Credentials implements Serializable {
     private static final long serialVersionUID = 3L;
     private final String voterId;

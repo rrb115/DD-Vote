@@ -1,8 +1,5 @@
-package ddvote.client; // CHANGED
+package ddvote.client;
 
-// CHANGED Imports
-import ddvote.shared.*;
-// Standard imports
 import javax.swing.*;
 import java.io.*;
 import java.net.*;
