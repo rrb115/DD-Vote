@@ -105,4 +105,3 @@ Here are some scenarios you can use to demonstrate the distributed computing fea
 *   **Logging Level:** The servers are configured to log a lot of information for debugging. To reduce clutter, you can change the logging level by editing `src/ddvote/server/VotingServer.java` and modifying the `rootLogger.setLevel()` line in the `setupBasicLogger()` method (e.g., set it to `Level.INFO` or `Level.WARNING`).
 *   **Firewall/Network Configuration:** Ensure that your firewall or network configuration allows the servers to communicate with each other on the specified ports.
 
-This `README.md` provides detailed instructions for setting up and running the voting application. Remember to adjust ports and server IDs as needed for your specific environment. Most importantly, have fun demonstrating the capabilities!
